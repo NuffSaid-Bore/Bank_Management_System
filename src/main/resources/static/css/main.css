@@ -47,13 +47,13 @@ body{
 /* Transact Button */
 #transact-btn{
     background-color: #8338ec;
-    border: 1px solid #e0aaff;
+    border: 1px solid #7678ed;
 }
 
 /* Add Accounts Button */
 #add-account-btn{
     background-color: #7678ed;
-    border: 1px solid #e0aaff;
+    border: 1px solid #8338ec;
     color: white;
 }
 
@@ -67,7 +67,7 @@ body{
 
 .transact-btn{
     background-color: #7678ed;
-    border: 1px solid #e0aaff;
+    border: 1px solid #8338ec;
     color: white;
 }
 

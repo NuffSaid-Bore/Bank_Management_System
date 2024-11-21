@@ -12,11 +12,12 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = {"com.example.Bank_Management_System"})
 public class AppConfig extends WebMvcConfigurationSupport{
 
-     @Override
+    @Override
     protected void addResourceHandlers(@SuppressWarnings("null") ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("css/**","images/**", "js/**")
+        registry.addResourceHandler("/css/**", "/images/**", "/js/**")
                 .addResourceLocations("classpath:/static/css/", "classpath:/static/images/", "classpath:/static/js/");
     }
+
 
     @Bean
     InternalResourceViewResolver viewResolver(){

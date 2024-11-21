@@ -36,12 +36,12 @@ body{
 .register{
     margin-right: 7px;
     background-color: #8338ec;
-    border: 1px solid #e0aaff;
+    border: 1px solid #7678ed;
 }
 
 .login{
     background-color: #7678ed;
-    border: 1px solid #e0aaff;
+    border: 1px solid #8338ec;
 }
 
 .card{
@@ -58,7 +58,7 @@ body{
 }
 .card button{
     background-color: #8338ec;
-    border: 1px solid #e0aaff;
+    border: 1px solid #7678ed;
     box-shadow: 0px 3px 6px rgb(0, 14, 53);
     color: white;
     width: 200px;

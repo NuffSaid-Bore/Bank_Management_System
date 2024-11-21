@@ -1,7 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix = "fn" uri = "http://java.sun.com/jsp/jstl/functions" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,19 +24,19 @@
             <!-- End Of Form Header -->
 
             <!-- Display Message -->
-            <c:if test="${requestScope.passwordMisMatch != null}">
+            <!-- <c:if test="${requestScope.passwordMisMatch != null}">
                 <div class="alert alert-danger text-center border border-danger">
                     <b>${requestScope.passwordMisMatch}</b>
                 </div>
-            </c:if>
+            </c:if> -->
             <!-- End Of Display Message -->
 
             <!-- Display Message -->
-            <c:if test="${requestScope.success != null}">
+            <!-- <c:if test="${requestScope.success != null}">
                 <div class="alert alert-success text-center border border-success">
                     <b>${requestScope.success}</b>
                 </div>
-            </c:if>
+            </c:if> -->
             <!-- End Of Display Message -->
 
             <!-- Regsitration Form -->
@@ -47,15 +45,15 @@
                 <div class="row">
                     <!-- From Group -->
                     <div class="form-group col">
-                        <form:input type="text" path="first_name" class="form-control form-control-lg" placeholder="Enter First Name"/>
-                        <form:errors path="first_name" class="text-white bg-danger"/>
+                        <input type="text" path="first_name" class="form-control form-control-lg" placeholder="Enter First Name"/>
+                        <!-- <form:errors path="first_name" class="text-white bg-danger"/> -->
                     </div>
                     <!-- End Of From Group -->
 
                     <!-- From Group -->
                     <div class="form-group col">
-                        <form:input type="text" path="last_name" class="form-control form-control-lg" placeholder="Enter Last Name"/>
-                        <form:errors path="last_name" class="text-white bg-danger"/>
+                        <input type="text" path="last_name" class="form-control form-control-lg" placeholder="Enter Last Name"/>
+                        <!-- <form:errors path="last_name" class="text-white bg-danger"/> -->
                     </div>
                     <!-- End Of From Group -->
                 </div>
@@ -63,8 +61,8 @@
 
                 <!-- From Group -->
                 <div class="form-group col">
-                    <form:input type="email" path="email" class="form-control form-control-lg" placeholder="Enter Email"/>
-                    <form:errors path="email" class="text-white bg-danger"/>
+                    <input type="email" path="email" class="form-control form-control-lg" placeholder="Enter Email"/>
+                    <!-- <form:errors path="email" class="text-white bg-danger"/> -->
 
                 </div>
                 <!-- End Of From Group -->
@@ -73,15 +71,15 @@
                 <div class="row">
                     <!-- From Group -->
                     <div class="form-group col">
-                        <form:input type="password" path="password" class="form-control form-control-lg" placeholder="Enter Password"/>
-                        <form:errors path="password" class="text-white bg-danger"/>
+                        <input type="password" path="password" class="form-control form-control-lg" placeholder="Enter Password"/>
+                        <!-- <form:errors path="password" class="text-white bg-danger"/> -->
                     </div>
                     <!-- End Of From Group -->
 
                     <!-- From Group -->
                     <div class="form-group col">
                         <input type="password" name="confirm_password" class="form-control form-control-lg" placeholder="Confirm Password"/>
-                        <small class="text-white bg-danger">${confirm_pass}</small>
+                        <!-- <small class="text-white bg-danger">${confirm_pass}</small> -->
                     </div>
                     <!-- End Of From Group -->
                 </div>
