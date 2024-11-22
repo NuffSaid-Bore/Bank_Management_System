@@ -21,11 +21,12 @@ public class AppConfig extends WebMvcConfigurationSupport{
 
     @Bean
     InternalResourceViewResolver viewResolver(){
-        InternalResourceViewResolver jspViewResolver = new InternalResourceViewResolver();
-        jspViewResolver.setPrefix("/WEB-INF/jsp/");
-        jspViewResolver.setSuffix(".jsp");
-        jspViewResolver.setViewClass(JstlView.class);
+    InternalResourceViewResolver jspViewResolver = new InternalResourceViewResolver();
+    jspViewResolver.setPrefix("/WEB-INF/jsp/");
+    jspViewResolver.setSuffix(".jsp");
+    jspViewResolver.setViewClass(JstlView.class);
 
-        return jspViewResolver;
-    }
+    return jspViewResolver;
+}
+
 }
