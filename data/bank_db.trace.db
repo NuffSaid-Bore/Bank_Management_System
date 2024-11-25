@@ -46,3 +46,28 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 42 more
+2024-11-25 15:45:09.973960+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE accounts\000d\000a[*]MODIFY balance DECIMAL(10,2) DEFAULT 0.00,\000d\000aMODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000aMODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE accounts
+MODIFY balance DECIMAL(10,2) DEFAULT 0.00,
+MODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+MODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP [42001-224]
+2024-11-25 15:46:14.747157+02:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE accounts\000d\000a[*]MODIFY balance DECIMAL(10,2) DEFAULT 0.00,\000d\000aMODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000aMODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE accounts
+MODIFY balance DECIMAL(10,2) DEFAULT 0.00,
+MODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+MODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP [42001-224]
+2024-11-25 15:46:56.488706+02:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE accounts\000d\000a[*]MODIFY balance DECIMAL(10,2) DEFAULT 0.00"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE accounts
+MODIFY balance DECIMAL(10,2) DEFAULT 0.00 [42001-224]
+2024-11-25 15:48:33.274628+02:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]ACCOUNTS"; expected "ALTER, ANALYZE"; SQL statement:
+ACCOUNTS [42001-224]
+2024-11-25 15:50:15.412305+02:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Delete [*]* from Accounts"; expected "identifier"; SQL statement:
+Delete * from Accounts [42001-224]
+2024-11-25 15:50:55.592685+02:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM ACCOUNTS"; expected "identifier"; SQL statement:
+DELETE * FROM ACCOUNTS [42001-224]
