@@ -3,12 +3,12 @@
     <%@ taglib prefix = "fn" uri = "http://java.sun.com/jsp/jstl/functions" %>
 
     <!-- Main Page Header -->
-    <header class="main-page-header mb-3 bg-primary">
+    <header class="main-page-header mb-3 ">
         <!-- Container -->
         <div class="container d-flex align-items-center">
             <!-- Company Name -->
             <div class="company-name">
-                Easy-Way Bank
+                Smart Banking
             </div>
             <!-- Company Name -->
 
