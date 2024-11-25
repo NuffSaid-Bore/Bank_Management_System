@@ -90,7 +90,7 @@ public class HTML {
                 "        <!-- End Of Email MSG Header -->\n" +
                 "\n" +
                 "        <!-- Company Name -->\n" +
-                "        <div class='company-name'>Easy Way Bank</div>\n" +
+                "        <div class='company-name'>Smart Banking</div>\n" +
                 "        <!-- End Of Company Name -->\n" +
                 "        <hr>\n" +
                 "\n" +
