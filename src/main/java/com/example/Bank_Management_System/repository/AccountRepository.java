@@ -19,6 +19,7 @@ public interface AccountRepository extends CrudRepository<Account, Integer> {
     List<Account> getUserAccountsById(@Param("user_id")int user_id);
 
     @Query(value = "SELECT sum(balance) FROM accounts WHERE user_id = :user_id", nativeQuery = true)
+    
     BigDecimal getTotalBalance(@Param("user_id")int user_id);
 
     @Query(value = "SELECT balance FROM accounts WHERE user_id = :user_id AND account_id = :account_id", nativeQuery = true)

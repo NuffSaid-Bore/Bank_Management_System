@@ -22,7 +22,12 @@ public class Account {
     private String account_number;
     private String account_name;
     private String account_type;
-    private BigDecimal balance;
-    private LocalDateTime created_at;
+    
+    // Default balance to 0.00
+    private BigDecimal balance = BigDecimal.ZERO;
+
+    // Default created_at to current timestamp
+    private LocalDateTime created_at = LocalDateTime.now();
+
     private LocalDateTime updated_at;
 }

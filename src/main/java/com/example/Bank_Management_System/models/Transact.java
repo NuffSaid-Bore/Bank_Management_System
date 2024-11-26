@@ -13,30 +13,27 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "payments")
-public class Payment {
-    
+@Table(name = "Transact")
+public class Transact {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int payment_id;
-    
+    private int transaction_id;
+
     private int account_id;
-    private String beneficiary;
-    private String beneficiary_acc_no;
-    
-    // Change amount to BigDecimal to handle precision better for financial transactions
+    private String transaction_type;
+
+    // Use BigDecimal for the amount field to avoid precision issues
     private BigDecimal amount;
 
-    private String reference_no;
+    private String source;
     private String status;
     private String reason_code;
-    
-    // Default created_at to current timestamp (can also be handled with @PrePersist)
     private LocalDateTime created_at;
-  
+
     @PrePersist
     public void prePersist() {
-        // Set created_at if it's not already set
+        // Ensure created_at is set to the current time if it's not already provided
         if (created_at == null) {
             created_at = LocalDateTime.now();
         }
